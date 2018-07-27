@@ -48,22 +48,26 @@ steps:
   - name: 使用 webpack 配置文件
     commit: 7cf6480
     explain:
-      pre: 到了版本 4，webpack 可以不需要任何配置。但是通过配置文件，我们能实现非常复杂的设定功能，这比在命令行中指定要方便的多。让我们创建一个 webpack 配置文件：
+      pre: >-
+        到了版本 4，webpack 可以不需要任何配置。但是通过配置文件，我们能实现非常复杂的设定功能，这比在命令行中指定要方便的多。让我们创建一个
+        webpack 配置文件：
       post:
         - 最后，我们开始用配置文件开始构建：
         - |-
           ```bash
           npx webpack --config webpack.config.js
           ```
-        - 配置文件是 webpack 如此强大的关键因素，我们可以在配置中指定 loader、插件等等。参考[这篇文档](https://webpack.js.org/configuration)以学习更多配置。
+        - >-
+          配置文件是 webpack 如此强大的关键因素，我们可以在配置中指定
+          loader、插件等等。参考[这篇文档](https://webpack.js.org/configuration)以学习更多配置。
     diff:
       - file: webpack.config.js
         section:
           start: 0
           end: 4
         explain:
-          post: `entry` 指定了打包的入口，告诉 webpack 依赖图的起点。
+          post: '`entry` 指定了打包的入口，告诉 webpack 依赖图的起点。'
       - file: webpack.config.js
         section:
           start: 4
-        explain: `output` 指定了打包后输出文件的设置，这里我们设定打包后的文件名为 `main.js`，放在 `dist` 目录下。
+        explain: '`output` 指定了打包后输出文件的设置，这里我们设定打包后的文件名为 `main.js`，放在 `dist` 目录下。'
