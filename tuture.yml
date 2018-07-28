@@ -63,11 +63,11 @@ steps:
     diff:
       - file: webpack.config.js
         section:
-          start: 0
+          start: 1
           end: 4
         explain:
           post: '`entry` 指定了打包的入口，告诉 webpack 依赖图的起点。'
       - file: webpack.config.js
         section:
-          start: 4
+          start: 5
         explain: '`output` 指定了打包后输出文件的设置，这里我们设定打包后的文件名为 `main.js`，放在 `dist` 目录下。'
