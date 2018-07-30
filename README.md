@@ -7,14 +7,10 @@
 首先确保你已经安装 tuture 所有组件：
 
 ```bash
-$ npm i -g tuture tuture-renderer
+$ npm i -g tuture tuture-cli
 ```
 
-或者如果你喜欢使用 yarn：
-
-```bash
-$ yarn global add tuture tuture-renderer
-```
+> 你可能需要 `sudo` 来全局安装 npm 包。
 
 ## 查看生成的教程
 
